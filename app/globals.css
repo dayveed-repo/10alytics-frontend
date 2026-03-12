@@ -2,21 +2,37 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1c0d05;
+  --primary: #db6700;
+  --secondary: #fffeec;
+  --primary-grey: #f3f3f3;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-primary-grey: var(--primary-grey);
+  --font-brF: var(--font-br-firma);
+  --font-cabinetG: var(--font-cabinet-grotesk);
+}
+
+@layer components {
+  .base-button {
+    @apply flex items-center justify-center p-3 text-sm font-semibold min-h-10 rounded-lg bg-primary text-white cursor-pointer;
+  }
+
+  .nav-link {
+    @apply text-[#495057] font-medium text-[0.875rem] leading-6 flex items-center space-x-1.5;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  /* :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-  }
+  } */
 }
 
 body {
