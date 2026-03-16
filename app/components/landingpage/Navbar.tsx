@@ -5,7 +5,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="w-full bg-white py-6">
+    <div className="w-full bg-white py-7 border-b border-b-[#EDEDED]">
       <div className="max-w-[90%] flex items-center justify-between mx-auto">
         <Image
           height={0}
@@ -50,16 +50,16 @@ const Navbar = () => {
         <div className="space-x-5">
           <Link
             href="/login"
-            className="border border-[#E0E0E0] rounded-2xl py-3.5 px-7 text-black font-medium text-[0.875rem] leading-6"
+            className="border border-[#E0E0E0] rounded-2xl py-3.75 px-7 text-black font-medium text-[1rem] leading-6"
           >
             Login
           </Link>
 
           <Link
             href="/signup"
-            className="rounded-2xl py-3.5 px-7 text-white font-medium text-[0.875rem] leading-6 bg-linear-to-r from-[#DB6700] to-[#89715F] "
+            className="rounded-2xl py-3.75 px-7 text-white font-medium text-[1rem] leading-6 bg-linear-to-r from-[#DB6700] to-[#89715F] "
           >
-            Signup
+            Get Started
           </Link>
         </div>
       </div>

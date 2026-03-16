@@ -6,6 +6,7 @@
   --primary: #db6700;
   --secondary: #fffeec;
   --primary-grey: #f3f3f3;
+  --primary-text-gray: #495057;
 }
 
 @theme inline {
@@ -14,6 +15,7 @@
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-primary-grey: var(--primary-grey);
+  --color-primary-text-gray: var(--primary-text-gray);
   --font-brF: var(--font-br-firma);
   --font-cabinetG: var(--font-cabinet-grotesk);
 }
@@ -24,7 +26,7 @@
   }
 
   .nav-link {
-    @apply text-[#495057] font-medium text-[0.875rem] leading-6 flex items-center space-x-1.5;
+    @apply text-[#495057] font-medium text-[1rem] leading-6 flex items-center space-x-1.5;
   }
 }
 
@@ -39,4 +41,16 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
 }
